@@ -1,0 +1,27 @@
+.simpleCollapse {
+  max-height: 0;
+  overflow: hidden;
+
+  -webkit-transform: scaleY(0) translate3d(0,0,0);
+  -ms-transform: scaleY(0) translate3d(0,0,0);
+  -o-transform: scaleY(0) translate3d(0,0,0);
+  transform: scaleY(0) translate3d(0,0,0);
+
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;
+
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.simpleCollapse.open {
+  max-height: 99999px;
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  transform: scaleY(1);
+}
